@@ -50,6 +50,7 @@ public class PingApp extends JFrame {
 
         txtHost = new JTextField(" 8.8.8.8", 10);
         txtHost.setFont(FONT_MEDIUM);
+        txtHost.setBackground(Color.DARK_GRAY);
         txtHost.setForeground(Color.RED);
 
         btnPing = createButton("Start", FONT_SMALL, Color.BLUE);
@@ -60,6 +61,7 @@ public class PingApp extends JFrame {
         inputPanel.add(txtHost);
         inputPanel.add(btnPing);
         inputPanel.add(btnStop);
+        inputPanel.setBackground(Color.ORANGE);
 
         return inputPanel;
     }
